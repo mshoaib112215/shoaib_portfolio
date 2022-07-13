@@ -62,7 +62,7 @@ const Work = () => {
                                     {/* <img src={urlFor(work.imgUrl)} alt={work.name} /> */}
 
                                     <motion.div
-                                        whileHover = {{opacity: [0, 1]}}
+                                        whileHover = {{opacity: [0, 1]} }
                                         transition = {{ duration: 0.25, staggerChildren: 0.5, ease: 'easeInOut'}}
                                         className = "app__work-hover app__flex"
 
