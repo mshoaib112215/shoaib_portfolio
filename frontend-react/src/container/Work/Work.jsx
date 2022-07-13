@@ -15,6 +15,22 @@ const Work = () => {
 
 
     const handleWorkFilter = (items) =>{
+        setActiveFilter(items);
+        setAnimateCard({y:100, opacity: 0});
+
+        setTimeout(() => {
+            setAnimateCard({y:0, opacity: 1});
+
+            if(items === 'All'){
+                setFilterWork(works);
+            }
+            else{
+                setFilterWork(works.filter((works)=>works.tags.includes(items)))
+            }
+        }, 500);
+            
+        
+
 
     }
 
@@ -41,7 +57,7 @@ const Work = () => {
                 </h2>
             
             <div className="app__work-filter">
-                {['UI/UX Designer', 'Web App', 'React Js', 'All'].map((items, index)=>(
+                {['UI/UX', 'Web App', 'React Js', 'All'].map((items, index)=>(
                     <div
                         key = {index}
                         onClick = {()=>handleWorkFilter(items)}
