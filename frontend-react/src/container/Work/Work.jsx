@@ -3,6 +3,7 @@ import { AiFillEye , AiFillGithub} from "react-icons/ai"
 import { client, urlFor} from "../../client";
 import { AppWrap } from "../../wrapper"
 import { motion } from "framer-motion"
+
 import "./Work.scss"
 
 
@@ -41,7 +42,7 @@ const Work = () => {
          .then((data)=>{
             setWorks(data);
             setFilterWork(data);
-         })
+         }) 
 
     },[])
     
