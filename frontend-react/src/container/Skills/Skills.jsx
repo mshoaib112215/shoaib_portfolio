@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { client, urlFor } from "../../client";
-import { AppWrap } from "../../wrapper"
+import { AppWrap, MotionWrap } from "../../wrapper"
 import ReactToolTip from "react-tooltip";
 import { motion } from "framer-motion"
 
@@ -98,6 +98,7 @@ const Skills = () => {
                                                     effect = 'solid'
                                                     arrowColor = "#fff"
                                                     className = "skills-toolTip"
+                                                    key = {work.company}
                                                 >
                                                     {work.desc}
                                                 </ReactToolTip>
@@ -118,4 +119,7 @@ const Skills = () => {
     )
 }
 
-export default AppWrap(Skills, "skills")
+export default AppWrap(
+    MotionWrap(Skills, "app__skills"),
+     "skills",
+    "app__whitebg")
