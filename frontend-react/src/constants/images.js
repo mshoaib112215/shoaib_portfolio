@@ -34,8 +34,18 @@ import bolt from "../assets/bolt.png";
 import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
+import ProfileIMG from "../assets/ProfileIMG.png";
+import ProfileIMG2 from "../assets/ProfileIMG2.png";
+import ProfileIMG3 from "../assets/ProfileIMG3.png";
+import ProfileIMG4 from "../assets/ProfileIMG4.png";
+import ProfileIMG5 from "../assets/ProfileIMG5.png";
 
 export default {
+  ProfileIMG,
+  ProfileIMG2,
+  ProfileIMG3,
+  ProfileIMG4,
+  ProfileIMG5,
   email,
   mobile,
   api,
