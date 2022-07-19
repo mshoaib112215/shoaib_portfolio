@@ -39,8 +39,10 @@ import ProfileIMG2 from "../assets/ProfileIMG2.png";
 import ProfileIMG3 from "../assets/ProfileIMG3.png";
 import ProfileIMG4 from "../assets/ProfileIMG4.png";
 import ProfileIMG5 from "../assets/ProfileIMG5.png";
+import php from "../assets/php.png";
 
 export default {
+  php, 
   ProfileIMG,
   ProfileIMG2,
   ProfileIMG3,

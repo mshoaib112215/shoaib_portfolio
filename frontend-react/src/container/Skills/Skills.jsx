@@ -60,7 +60,7 @@ const Skills = () => {
                     {experiences.map((experience)=>(
                             <motion.div
                                 className = "app__skills-exp-item"
-                                key = {experience.name}
+                                key = {experience.year}
                             >
                                 <div className="app__skills-exp-year">
 

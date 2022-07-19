@@ -10,6 +10,7 @@ const Footer = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: ''});
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
     const [loding, setLoding] = useState(false);
+
     
     const { name, email, message} = formData;
 
@@ -20,7 +21,7 @@ const Footer = () => {
     }
     const handleSubmit = (e)=>{
         setLoding(true);
-
+        
         const contact = {
             _type : 'contact',
             name: name,
@@ -33,6 +34,7 @@ const Footer = () => {
                 setLoding(false);
                 setIsFormSubmitted(true);
             })
+
     }
     return (
         <>
@@ -71,6 +73,7 @@ const Footer = () => {
             </div>
             : <div className="head-text">Thank You for Getting in touch!</div>
             }
+
         </>
     )
 }
